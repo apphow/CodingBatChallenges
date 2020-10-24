@@ -12,8 +12,12 @@ public class TheEnd {
 
     public static String theEnd(String str, boolean front) {
 
-
-        return null;
+        if(!front) {
+            System.out.println(str.substring(str.length() -1));
+            return str.substring(str.length() -1);
+        }
+        System.out.println(str.substring(0, 1));
+        return str.substring(0, 1);
     }
 
     public static void main(String[] args) {
