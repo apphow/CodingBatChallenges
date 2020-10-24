@@ -12,7 +12,10 @@ package stringone;
 public class NTwice {
 
     public static String nTwice(String str, int n) {
-        return null;
+        String first = str.substring(0, n);
+        String last = str.substring(str.length() -n);
+        System.out.println(first + last);
+        return first + last;
     }
 
     public static void main(String[] args) {
