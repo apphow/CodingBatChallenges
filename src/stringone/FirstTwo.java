@@ -12,5 +12,17 @@ public class FirstTwo {
 //    firstTwo("abcdefg") → "ab"
 //    firstTwo("ab") → "ab"
 
+public static String firstTwo(String str) {
+    if(str.length() < 2) {
+        return str;
+    }
+    String firstTwo = str.substring(0, 2);
+    return firstTwo;
+}
 
+    public static void main(String[] args) {
+        System.out.println(firstTwo("Hello"));
+        System.out.println(firstTwo("abcdefg"));
+        System.out.println(firstTwo("ab"));
+    }
 }
