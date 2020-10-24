@@ -12,7 +12,9 @@ package stringone;
 public class middleTwo {
 
     public static String middleTwo(String str) {
-        return null;
+        String middleTwo = str.substring(str.length()/2 -1, str.length()/2 + 1);
+        System.out.println(middleTwo);
+        return middleTwo;
     }
 
     public static void main(String[] args) {
