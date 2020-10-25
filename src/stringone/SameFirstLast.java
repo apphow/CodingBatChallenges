@@ -12,6 +12,11 @@ public class SameFirstLast {
 //    sameFirstLast([1, 2, 1]) → true
 
     public static boolean sameFirstLast(int[] nums) {
+        if(nums.length > 0 && nums[0] == nums[nums.length -1]){
+            System.out.println(true);
+            return true;
+        }
+        System.out.println(false);
         return false;
     }
 
