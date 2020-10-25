@@ -1,4 +1,4 @@
-package stringone;
+package arrayone;
 
 public class SameFirstLast {
 
