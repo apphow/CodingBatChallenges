@@ -23,23 +23,37 @@ public class WithoutX2 {
 //    withoutX2("xHxllo") → "Hxllo"
 
     public static String withoutX2(String str) {
-        return null;
+        if(str.length() == 1 && str.substring(0, 1).equals("x")) {
+            return "";
+        }
+        if(str.length() >= 2) {
+            if (str.substring(0, 1).equals("x") && str.substring(1, 2).equals("x")) {
+                return str.substring(2);
+            }
+            if (str.substring(0, 1).equals("x") && !str.substring(1, 2).equals("x")) {
+                return str.substring(1);
+            }
+            if (str.substring(1, 2).equals("x") && !str.substring(0, 1).equals("x")) {
+                return str.substring(0, 1) + str.substring(2);
+            }
+        }
+        return str;
     }
 
+
     public static void main(String[] args) {
-        withoutX2("xHix");
-        withoutX2("xHi");
-        withoutX2("Hxix");
-        withoutX2("Hxi");
-        withoutX2("Hi");
-        withoutX2("xxHi");
-        withoutX2("xaxb");
-        withoutX2("XX");
-        withoutX2("x");
-        withoutX2("");
-        withoutX2("Hello");
-        withoutX2("Hexllo");
-        withoutX2("xHxllo");
+        System.out.println(withoutX2("xHi"));
+        System.out.println(withoutX2("Hxi"));
+        System.out.println(withoutX2("Hi"));
+        System.out.println(withoutX2("xxHi"));
+        System.out.println(withoutX2("Hix"));
+        System.out.println(withoutX2("xaxb"));
+        System.out.println(withoutX2("XX"));
+        System.out.println(withoutX2("x"));
+        System.out.println(withoutX2(""));
+        System.out.println(withoutX2("Hello"));
+        System.out.println(withoutX2("Hexllo"));
+        System.out.println(withoutX2("xHxllo"));
 
     }
 }
