@@ -31,6 +31,5 @@ public class No23 {
         no23(new int[] {3, 3});
         no23(new int[] {7, 8});
         no23(new int[] {8, 7});
-
     }
 }
