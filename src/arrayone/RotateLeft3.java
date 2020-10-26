@@ -19,6 +19,8 @@ public class RotateLeft3 {
         System.out.println(Arrays.toString(nums));
         return nums;
         }
+        // int[] news = {nums[1], nums[2], nums[0]};
+        // return news;
 
     public static void main(String[] args) {
         int[] one = {1, 2, 3};
