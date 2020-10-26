@@ -17,14 +17,14 @@ public class Sum3 {
     }
 
     public static void main(String[] args) {
-        int[] one = {1, 2, 3};
-        int[] two = {5, 11, 2};
+        //int[] one = {1, 2, 3};
+        //int[] two = {5, 11, 2};
         int[] three = {7, 0, 0};
         int[] four = {1, 2, 1};
         int[] five = {1, 1, 1};
         int[] six = {2, 7, 2};
-        sum3(one);
-        sum3(two);
+        sum3(new int[] {1, 2, 3});
+        sum3(new int[] {5, 11, 2});
         sum3(three);
         sum3(four);
         sum3(five);

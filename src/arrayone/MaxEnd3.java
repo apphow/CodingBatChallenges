@@ -13,6 +13,16 @@ import java.util.Arrays;
 
 public class MaxEnd3 {
 
+ //   public static class Foo {
+//        public void method(int[] myStrArray) {
+//            System.out.println(Arrays.toString(myStrArray));
+//        }
+//
+//        public static void main(String[] args) {
+//            Foo foo = new Foo();
+//            foo.method(new int[]{3, 2}); // **array created inline**
+//        }
+
     public static int[] maxEnd3(int[] nums) {
         int largest = Math.max(nums[0], nums[nums.length -1]);
         nums[0] = largest;
@@ -24,12 +34,17 @@ public class MaxEnd3 {
     }
 
     public static void main(String[] args) {
-        int[] one = {1, 2, 3};
-        int[] two = {11, 5, 9};
-        int[] three = {2, 11, 3};
-        maxEnd3(one);
-        maxEnd3(two);
-        maxEnd3(three);
+        maxEnd3(new int[]{1, 2, 3});
+        maxEnd3(new int[]{11, 5, 9});
+        maxEnd3(new int[]{2, 11, 3});
 
     }
-}
+//        int[] one = {1, 2, 3};
+//        int[] two = {11, 5, 9};
+//        int[] three = {2, 11, 3};
+//        maxEnd3(one);
+//        maxEnd3(two);
+//        maxEnd3(three);
+
+    }
+

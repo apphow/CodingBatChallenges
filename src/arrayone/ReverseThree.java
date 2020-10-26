@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class ReverseThree {
 
     public static int[] reverse3(int[] nums) {
-       int[] newOne = new int[3];
+       int[] newOne;
 //       newOne[0]= nums[2];
 //       newOne[1] = nums[1];
 //       newOne[2] = nums[0];
@@ -29,8 +29,14 @@ public class ReverseThree {
     }
 
     public static void main(String[] args) {
-        int[] news = {1, 2, 3};
-        reverse3(news);
+        reverse3(new int[] {1, 2, 3});
+        reverse3(new int[] {5, 11, 9});
+        reverse3(new int[] {7, 0, 0});
+        reverse3(new int[] {2, 1, 2});
+        reverse3(new int[] {1, 2, 1});
+        reverse3(new int[] {2, 11, 3});
+        reverse3(new int[] {0, 6, 5});
+        reverse3(new int[] {7, 2, 3});
 
     }
 }

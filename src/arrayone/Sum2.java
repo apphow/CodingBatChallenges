@@ -22,12 +22,12 @@ public class Sum2 {
     }
 
     public static void main(String[] args) {
-        int[] one = {1, 2, 3};
-        int[] two = {1, 1};
+        //int[] one = {1, 2, 3};
+        //int[] two = {1, 1};
         int[] three = {1, 1, 1, 1};
 
-        sum2(one);
-        sum2(two);
+        sum2(new int[] {1, 2, 3});
+        sum2(new int[] {1, 1});
         sum2(three);
     }
 }

@@ -23,8 +23,8 @@ public class firstLast6 {
     }
 
     public static void main(String[] args) {
-        int[] one = {1, 2, 6};
-        int[] two = {6, 1, 2, 3};
+        //int[] one = {1, 2, 6};
+        //int[] two = {6, 1, 2, 3};
         int[] three = {13, 6, 1, 2, 3};
         int[] four = {12, 6, 1, 2, 6};
         int[] five = {3, 2, 1};
@@ -36,8 +36,8 @@ public class firstLast6 {
         int[] eleven = {5, 5};
         int[] twelve = {1, 2, 3, 4, 6};
         int[] uhoh = {1, 2, 3, 4};
-        firstLast6(one);
-        firstLast6(two);
+        firstLast6(new int[]{1, 2, 6});
+        firstLast6(new int[]{6, 1, 2, 3});
         firstLast6(three);
         firstLast6(four);
         firstLast6(five);

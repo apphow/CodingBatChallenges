@@ -26,8 +26,8 @@ public class CommonEnd {
     }
 
     public static void main(String[] args) {
-        int[] oneA = {1, 2, 3};
-        int[] oneB = {7,3};
+//        int[] oneA = {1, 2, 3};
+//        int[] oneB = {7,3};
         int[] twoA = {1, 2, 3};
         int[] twoB = {7, 3, 2};
         int[] threeA = {1, 2, 3};
@@ -36,7 +36,7 @@ public class CommonEnd {
         int[] fourB = {1};
         int[] fiveA = {1, 2, 3};
         int[] fiveB = {2};
-        commonEnd(oneA, oneB);
+        commonEnd(new int[]{1, 2, 3}, new int[] {7, 3});
         commonEnd(twoA, twoB);
         commonEnd(threeA, threeB);
         commonEnd(fourA, fourB);

@@ -22,8 +22,8 @@ public class SameFirstLast {
 
     public static void main(String[] args) {
 
-        int[] one = {1, 2, 3};
-        int[] two = {1, 2, 3, 1};
+        //int[] one = {1, 2, 3};
+        //int[] two = {1, 2, 3, 1};
         int[] three = {1, 2, 1};
         int[] four = {7};
         int[] five = {};
@@ -31,8 +31,8 @@ public class SameFirstLast {
         int[] seven = {1, 2, 3, 4, 5, 13};
         int[] eight = {13, 2, 3, 4, 5, 13};
         int[] nine = {7, 7};
-        sameFirstLast(one);
-        sameFirstLast(two);
+        sameFirstLast(new int[] {1, 2, 3});
+        sameFirstLast(new int[] {1, 2, 3, 1});
         sameFirstLast(three);
         sameFirstLast(four);
         sameFirstLast(five);
