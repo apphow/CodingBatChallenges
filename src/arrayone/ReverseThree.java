@@ -1,4 +1,5 @@
 package arrayone;
+import java.util.Arrays;
 
 //    Given an array of ints length 3, return a new
 //    array with the elements in reverse order,
@@ -10,11 +11,26 @@ package arrayone;
 
 public class ReverseThree {
 
-    public int[] reverse3(int[] nums) {
-        return null;
+    public static int[] reverse3(int[] nums) {
+       int[] newOne = new int[3];
+//       newOne[0]= nums[2];
+//       newOne[1] = nums[1];
+//       newOne[2] = nums[0];
+//        System.out.println(Arrays.toString(newOne));
+//       return newOne;
+
+        int first = nums[2];
+        int second = nums[1];
+        int last = nums[0];
+        newOne = new int[]{first, second, last};
+
+        System.out.println(Arrays.toString(newOne));
+        return newOne;
     }
 
     public static void main(String[] args) {
+        int[] news = {1, 2, 3};
+        reverse3(news);
 
     }
 }
