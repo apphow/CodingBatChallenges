@@ -10,11 +10,16 @@ package warmup2;
 public class FrontTimes {
 
     public static String frontTimes(String str, int n) {
-
-        String front3 = str.substring(0, 3);
         String newStr = "";
-        for(int i = 0; i < n; i++) {
-            newStr += front3;
+        if(str.length() <= 3) {
+            for (int i = 0; i < n; i++) {
+                newStr += str;
+            }
+        }else {
+
+            for(int i = 0; i < n; i++) {
+                newStr += str.substring(0, 3);
+            }
         }
         System.out.println(newStr);
         return newStr;
@@ -22,7 +27,12 @@ public class FrontTimes {
 
     public static void main(String[] args) {
         frontTimes("Chocolate", 2);
+        frontTimes("", 4);
+
         frontTimes("Chocolate", 3);
+        frontTimes("Abc", 0);
         frontTimes("Abc", 3);
+        frontTimes("Ab", 4);
+        frontTimes("A", 4);
     }
 }
