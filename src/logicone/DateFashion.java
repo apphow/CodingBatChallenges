@@ -1,38 +1,47 @@
 package logicone;
-// The squirrels in Palo Alto spend most of the day playing.
-// In particular, they play if the temperature is between
-// 60 and 90 (inclusive). Unless it is summer, then the upper
-// limit is 100 instead of 90. Given an int temperature and a
-// boolean isSummer, return true if the squirrels play and
-// false otherwise.
+
+//You and your date are trying to get a table at a restaurant. The parameter
+// "you" is the stylishness of your clothes, in the range 0..10, and "date" is
+// \the stylishness of your date's clothes. The result getting the table is
+// encoded as an int value with 0=no, 1=maybe, 2=yes. If either of you is very
+// stylish, 8 or more, then the result is 2 (yes). With the exception that if
+// either of you has style of 2 or less, then the result is 0 (no).
+// Otherwise the result is 1 (maybe).
 //
-//        squirrelPlay(70, false) → true
-//        squirrelPlay(95, false) → false
-//        squirrelPlay(95, true) → true
+//        dateFashion(5, 10) → 2
+//        dateFashion(5, 2) → 0
+//        dateFashion(5, 5) → 1
 public class DateFashion {
 
-        public static boolean squirrelPlay(int temp, boolean isSummer) {
-            if(((temp >= 60 && temp <= 90) && !isSummer) || (temp >= 60 && temp <= 100 && isSummer)) {
-                System.out.println(true);
-                return true;
-            }
-            System.out.println(false);
-            return false;
+    public static int dateFashion(int you, int date) {
+        if((you >= 8 && date > 2) || (date >= 8 && you > 2)) {
+            System.out.println(2);
+            return 2;
         }
+        if(you <= 2 || date <= 2) {
+            System.out.println(0);
+            return 0;
+        }
+        System.out.println(1);
+        return 1;
+
+    }
 
     public static void main(String[] args) {
-        squirrelPlay(70, false);
-        squirrelPlay(95, false);
-        squirrelPlay(95, true);
-        squirrelPlay(90, false);
-        squirrelPlay(90, true);
-        squirrelPlay(50, false);
-        squirrelPlay(50, true);
-        squirrelPlay(100, false);
-        squirrelPlay(100, true);
-        squirrelPlay(105, true);
-        squirrelPlay(59, false);
-        squirrelPlay(59, true);
-        squirrelPlay(60, false);
+        dateFashion(5, 10);
+        dateFashion(5, 2);
+        dateFashion(5, 5);
+        dateFashion(3, 3);
+        dateFashion(10, 2);
+        dateFashion(2, 9);
+        dateFashion(9, 9);
+        dateFashion(10, 5);
+        dateFashion(2, 2);
+        dateFashion(3, 7);
+        dateFashion(2, 7);
+        dateFashion(6, 2);
+
     }
+
+
 }
