@@ -17,6 +17,7 @@ public static int blackjack(int a, int b) {
     }
     System.out.println(b);
     return b;
+
 }
 
 //   if(a > 21 && b <=21) {
@@ -52,4 +53,6 @@ public static int blackjack(int a, int b) {
         blackjack(3, 2);// → 3	3	OK
         blackjack(21, 20);// → 21	21	OK
     }
+
+
 }
